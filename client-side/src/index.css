@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
 }
 nav .brand-logo {
   display: block;
@@ -18,36 +22,39 @@ nav .brand-logo {
 } 
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid rgb(206, 135, 135);
+  border-bottom: 1px solid rgb(20, 135, 135);
   box-shadow: 0 1px 0 0 #000;
+  background: linear-gradient(to top, #2ebf91, #8360c3)
 }
 
 input[type=text]:not(.browser-default) {
-  border-bottom: 1px solid rgb(206, 135, 135)(221, 113, 113);
-  color: #000;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  
 }
 input[type=text]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #000;
   -webkit-box-shadow: 0 1px 0 0 #000;
   box-shadow: 0 1px 0 0 #000;
+  background: linear-gradient(to top, #2ebf91, #8360c3)
 }
 input[type=text]:not(.browser-default):focus:not([readonly]) + label {
-  color: white;
+  color: #000;
 }
 
 .container-form {
-  padding: 3rem 0 1px 0;
-  background: #8360c3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  border-top: 1px;
+  padding: 8rem 0 1px 0;
+  padding-bottom: 280px;
+  
 }
 .buscador i {
   width: 100%;
 }
 .error {
   padding: 1rem!important;
-  color:white;
+  color:#000;
   margin-top: 3rem;
   text-align: center;
 }

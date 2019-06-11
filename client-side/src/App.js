@@ -3,7 +3,8 @@ import socketIOClient from "socket.io-client";
 import Header from './Components/Header';
 import WeatherForm from './Components/WeatherForm';
 import Error from './Components/Error';
-import Forecast from "./Components/Forecast";
+import Forecast from  './Components/Forecast';
+import WeatherIcons from './Components/WeatherIcons';
 
 let socket = "";
 class App extends React.Component {
@@ -56,6 +57,9 @@ class App extends React.Component {
         <Header
           title= 'The Weather in your city' 
         />
+        <WeatherIcons
+            response = {response}
+        />            
         <div className="container-form">
           <div className="container">
             <div className="row">

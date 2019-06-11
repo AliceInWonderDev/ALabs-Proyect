@@ -4,9 +4,10 @@ function Forecast({ response }){
     return(
         <div className="card-panel white col s12">
             <div className="black-text">
+                    
                 <h2>El clima de la Ciudad es:</h2>
                     <p>
-                        {response.temperature}
+                        <h3> {response.temperature} F</h3>
                     </p>
                 <h2>Su Humedad es:</h2>
                     <p>
